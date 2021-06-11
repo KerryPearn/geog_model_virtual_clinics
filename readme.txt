@@ -1,4 +1,4 @@
-The contents of this zip file:
+The contents of this repository:
 
 - binder/
 	- environment.yml
