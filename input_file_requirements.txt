@@ -1,0 +1,50 @@
+Requirements of the input files
+
+The geographical model accesses values in the data files by using the column names, so the column names need to match what is expected by the code.
+
+Note: Also need to make sure that all of the common fields have the same names across all files - for example: treatment function, clinic name, postcode sector. 
+
+--------------------------------------------------------------------------------
+
+1. Travel matrix column names:
+* pc_sector
+* A column per clinic, for example: RCH_TRELISKE, RCH_WEST_CORNWALL_HOSPITAL, ST_MICHAELS_HOSPITAL
+
+--------------------------------------------------------------------------------
+
+2. Activity data column names:
+* pc_sector
+* treatment_function
+* total_new_adms
+* total_followup_adms
+
+--------------------------------------------------------------------------------
+
+3. Scenario data column names:
+* treatment_function
+* scenario_title
+* pc_followup_adms_virtual
+* pc_new_adms_virtual
+
+Note: The whatif? scenario titles are defined as: adding the proportion of the remaining patients to virtual. So if baseline has 60% virtual, a scenario called 50% adds including half of the 40% that were inperson to virtual: 0.6 + (0.5 * (1-0.6))
+
+--------------------------------------------------------------------------------
+
+4. Clinic data column names:
+* treatment_function
+* A column per clinic, for example: RCH_TRELISKE, RCH_WEST_CORNWALL_HOSPITAL, ST_MICHAELS_HOSPITAL
+
+--------------------------------------------------------------------------------
+
+5. Clinic location column names:
+* clinic
+* clinic_label
+* easting
+* northing
+
+--------------------------------------------------------------------------------
+
+6. Clinic label location column names:
+* clinic_label
+* easting
+* northing
